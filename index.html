@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<script lang="en"></script>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Document</title>
+  <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous"
+  />
+  <link rel="stylesheet" href="style/style.css" />
+</head>
+<body>
+  <div class="heading">Registration form</div>
+  <div class="content">
+    <form class="form_entering" id="form_entering">
+      <div class="form_inputs">
+        <div class="form-group">
+          <label for="email">Email address</label>
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            aria-describedby="emailHelp"
+            placeholder="Enter email"
+          />
+          <small id="emailHelp" class="form-text text-muted"
+            >We'll never share your email with anyone else.</small
+          >
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input
+            type="password"
+            class="form-control"
+            id="password"
+            placeholder="Password"
+          />
+        </div>
+        <div class="form-group input-group flex-nowrap">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="addon-wrapping">@</span>
+          </div>
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Username"
+            id="username"
+            aria-label="Username"
+            aria-describedby="addon-wrapping"
+          />
+        </div>
+        <div class="form-group form-check">
+          <input type="checkbox" class="form-check-input" id="check" />
+          <label class="form-check-label" for="check">Check me out</label>
+        </div>
+      </div>
+      <button type="submit" id="submit" class="btn btn-primary">Submit</button>
+    </form>
+    <div class="buttons">
+      <button type="button" id="add" class="btn btn-success">Add</button>
+      <button type="button" id="delete" class="btn btn-warning">Delete</button>
+      <button type="button" id="clean" class="btn btn-info">Clean</button>
+    </div>
+  </div>
+</div>
+</body>
+<script src="./js/libs/jquery.js" defer></script>
+<script src="./js/main.js" defer></script>
